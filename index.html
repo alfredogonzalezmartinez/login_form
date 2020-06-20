@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de acceso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div id="main-container">
-        <div id="left_container">
+        <div id="left-container">
             <form action="/">
-            <div id="logo-container">
-                <img src="img/logo.png" alt="">
-            </div>
-
-            <div id="title-container">
-                <h2>Acceso</h2>
-            </div>
-
-            <div id="social-login-container">
-                <button>Acceder con Google</button>
-            </div>
-
-            <div id="separator-container">
-                <span>Acceder con correo electrónico</span>
-            </div>
-
-            <div id="inputs-container">
-                <label for="username">Usuario</label>
-                <input type="text" name="username">
-                
-                <label for="password">Contraseña</label>
-                <input type="password" name="password">
-
-                <div id="options_container">
-                    <label><input type="checkbox" name="">Mantenerme conectado</label>
-                    <a href="#">Olvidé mi contraseña</a>
+                <div id="logo-container">
+                    <img src="img/logo.png" alt="">
                 </div>
 
-                <div id="button-container">
-                    <input type="submit" value="Iniciar sesión">
+                <div id="title-container">
+                    <h2>Acceso</h2>
                 </div>
-            </div>
 
-            <div id="register-container">
-                <Span>¿No tienes cuenta? </Span><a href="#">Resgistarte</a>
-            </div>
+                <div id="social-login-container">
+                    <button class="btn-google">Acceder con Google</button>
+                </div>
+
+                <div id="separator-container">
+                    <div class="line"></div>
+                    <span>Acceder con correo electrónico</span>
+                    <div class="line"></div>
+                </div>
+
+                <div id="inputs-container">
+                    <label for="username">Usuario</label>
+                    <input type="text" name="username">
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password">
+
+                    <div id="options_container">
+                        <div>
+                            <label><input type="checkbox" name="stayconnected">Mantenerme conectado</label>
+                        </div>
+                        <div class="right">
+                            <a href="#">Olvidé mi contraseña</a>
+                        </div>
+                    </div>
+
+                    <div id="button-container">
+                        <input type="submit" class="btn" value="Iniciar sesión">
+                    </div>
+                </div>
+
+                <div id="register-container">
+                    <Span>¿No tienes cuenta? </Span><a href="#">Resgistarte</a>
+                </div>
             </form>
         </div>
 
-        <div id="right_container"></div>
+        <div id="right-container"></div>
     </div>
 </body>
+
 </html>
