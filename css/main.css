@@ -25,7 +25,7 @@
     font-family: 'Merriweather', serif;
 }
 
-a{
+a {
     color: #000000;
 }
 
@@ -44,9 +44,19 @@ a{
     background-position: center center;
 }
 
+@media only screen and (max-width: 1100px) {
+    #left-container {
+        width: 100%;
+    }
+    #right-container {
+        width: 0%;
+    }
+}
+
 form {
     width: 400px;
-    margin: var(--size-xxl) auto;
+    margin: auto;
+    padding-top: var(--size-xl);
     font-size: var(--size-m);
 }
 
